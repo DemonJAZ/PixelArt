@@ -1,7 +1,4 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
+// makeGrid function to initialize table and add event listners
 function makeGrid() {
   $('table').empty();
 
@@ -19,11 +16,11 @@ function makeGrid() {
     }
   }
 
-  $('td').click( function(){
+  $('td').click( function(){      // function to Change color of the cell by single click
     this.style.backgroundColor = colorPicker.val();
   } );
 
-  $('td').dblclick( function(){
+  $('td').dblclick( function(){   // function to clear color of the cell by double click
     this.style.backgroundColor = "";
   } );
 
